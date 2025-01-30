@@ -1,0 +1,26 @@
+{
+	"name": "daily_pipeline",
+	"properties": {
+		"description": "this is for daily jobs",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_copy_sql_table",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2025-01-28T11:01:00",
+				"endTime": "2025-01-29T03:15:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
