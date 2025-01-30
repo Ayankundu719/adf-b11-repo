@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-b11-devv"
+		},
+		"Is_target_db_password": {
+			"value": ""
+		},
+		"ls_adls_gen2_accountKey": {
+			"value": ""
+		},
+		"ls_source_sql_connectionString": {
+			"value": ""
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://keyvault-b111.vault.azure.net/"
+		},
+		"Is_keyvault_sql_source_properties_typeProperties_connectionString_secretName": {
+			"value": "sqlsecretb11"
+		},
+		"Is_target_db_properties_typeProperties_server": {
+			"value": "sqlserverb11devv.database.windows.net"
+		},
+		"Is_target_db_properties_typeProperties_database": {
+			"value": "targetsqldbdev"
+		},
+		"Is_target_db_properties_typeProperties_userName": {
+			"value": "ayankundu"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://reqres.in/api/users"
+		},
+		"ls_RestAPI_for_copy_properties_typeProperties_url": {
+			"value": "https://reqres.in/api/users"
+		},
+		"ls_adls_gen2_properties_typeProperties_url": {
+			"value": "https://adlsb11gen22.dfs.core.windows.net"
+		},
+		"TumblingWindow_Trigger_properties_pipeline_parameters_StartDate": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"TumblingWindow_Trigger_properties_pipeline_parameters_EndDate": {
+			"value": "@trigger().outputs.windowEndTime"
+		}
+	}
+}
